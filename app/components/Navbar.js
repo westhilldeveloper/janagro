@@ -37,16 +37,20 @@ export default function Navbar() {
           }`}
           onClick={() => setOpen(false)}
         >
-          <span className="grid place-items-center w-10 h-10 rounded-xl bg-ochre text-[#2a1c05]" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
-              <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
-              <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
-            </svg>
-          </span>
-          <span className="flex flex-col leading-none">
+           <img
+            src="/images/ANASHAKTIAGRO-01-01.png"
+            alt="Janashakti Agro"
+            /* If scrolled or mobile menu open, show original colors. 
+               Otherwise, make it white to stand out against the dark hero image. */
+            className={`h-24  w-auto object-contain transition-all duration-300 ${
+              scrolled || open ? "" : "brightness-0 invert"
+            }`}
+          />
+         
+          {/* <span className="flex flex-col leading-none">
             <strong className="text-lg font-semibold">Janashakti</strong>
             <small className="text-[10px] tracking-[0.3em] uppercase opacity-70 mt-1">Agro</small>
-          </span>
+          </span> */}
         </a>
 
         <nav className="hidden md:flex items-center gap-8">

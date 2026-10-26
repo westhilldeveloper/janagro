@@ -14,17 +14,13 @@ export default async function Footer() {
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-[1.7fr_1fr_1fr] gap-10">
           <div>
-            <a href="#top" className="flex items-center gap-3 mb-4 text-white">
-              <span className="grid place-items-center w-10 h-10 rounded-xl bg-ochre text-[#2a1c05]" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
-                  <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
-                  <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
-                </svg>
-              </span>
-              <span className="flex flex-col leading-none font-display">
-                <strong className="text-lg font-semibold">Janashakti</strong>
-                <small className="text-[10px] tracking-[0.3em] uppercase opacity-70 mt-1">Agro</small>
-              </span>
+            <a href="#top" className="inline-flex items-center mb-4">
+              <img
+                src="/images/ANASHAKTIAGRO-01-01.png"
+                alt="Janashakti Agro"
+                /* Footer is dark, so invert the logo to white */
+                className="h-20 w-auto object-contain "
+              />
             </a>
             <p className="max-w-[34ch] text-sm leading-relaxed">
               A farmer-owned collective helping small farming teams share land, tools and
